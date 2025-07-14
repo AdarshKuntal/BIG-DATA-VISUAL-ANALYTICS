@@ -1,0 +1,114 @@
+.smr-container {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.smr-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.smr-title {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #4cc9f0, #f72585);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.smr-subtitle {
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.smr-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px auto;
+}
+
+.smr-activity-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+.smr-activity-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.smr-activity-btn.active {
+  background: rgba(76, 175, 80, 0.3);
+  border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.smr-chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.smr-tooltip {
+  position: absolute;
+  background: rgba(30, 41, 59, 0.95);
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 14px;
+  z-index: 100;
+  border-left: 4px solid;
+  backdrop-filter: blur(6px);
+}
+
+.smr-tooltip h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+.smr-tooltip .value {
+  color: #4cc9f0;
+  font-weight: bold;
+}
+
+.smr-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 20px;
+}
+.smr-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.smr-legend-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 2px solid;
+  background: transparent;
+}
+
+.smr-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 25px;
+}
